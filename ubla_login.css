@@ -1,0 +1,93 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #1f2a38;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+         }
+
+        .login-container {
+            text-align: center;
+            background-color: #bed8dc;
+            border-radius: 15px;
+            padding: 30px;
+            width: 350px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #00aaff;
+            margin: 10px 0;
+        }
+
+        .tagline {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #00aaff;
+            border-radius: 25px;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #0088cc;
+        }
+
+        .login-btn {
+            width: 80%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #00aaff;
+            color: #fff;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #0088cc;
+        }
+
+        .social-login {
+            margin: 20px 0;
+        }
+
+        .social-icons img {
+            width: 40px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .register {
+            margin-top: 20px;
+        }
+
+        .register a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+
+        .register a:hover {
+            text-decoration: underline;
+        }
+    
