@@ -1,0 +1,90 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1C2833; /* Dark blue background to match the home page */
+}
+
+/* Ride Request Container */
+.ride-request-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #CFE4E7; /* Light blue to match form background on home page */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+    text-align: center;
+}
+
+/* Header */
+.header {
+    margin-bottom: 20px;
+}
+
+.header .logo {
+    height: 60px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #1C8EF9; /* Blue to match the "Welcome to Ubla" text on home page */
+    margin-top: 10px;
+}
+
+/* Form Styles */
+.ride-form label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.ride-form input, .ride-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #1C8EF9; /* Blue border to match home page's input style */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #f7f9fc;
+}
+
+/* Request Button */
+/* .request-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #1C8EF9; /* Match "Sign In" button color
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} */
+
+
+.ride-request {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #00aaff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.ride-request:hover {
+    background-color: #0088cc;
+}
+

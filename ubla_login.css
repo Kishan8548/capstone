@@ -90,4 +90,19 @@ body {
         .register a:hover {
             text-decoration: underline;
         }
-    
+        .login-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #00aaff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .login-btn:hover {
+            background-color: #0088cc;
+        }

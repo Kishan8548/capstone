@@ -79,6 +79,8 @@ html, body {
     font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+    
 }
 
 .book-now-btn:hover {
@@ -133,4 +135,7 @@ html, body {
 .ride-card p {
     font-size: 1rem;
     color: #ffffff;
+}
+h3{
+    padding-top: 15px;
 }

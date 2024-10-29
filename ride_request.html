@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Request - Ubla</title>
+    <link rel="stylesheet" href="ride-request.css">
+</head>
+<body>
+
+    <!-- Ride Request Container -->
+    <div class="ride-request-container">
+
+        <!-- Header -->
+        <header class="header">
+            <img src="Ubla_logo-removebg-preview.png" alt="Ubla Logo" class="logo">
+            <h1>Request a Ride</h1>
+        </header>
+
+        <!-- Ride Request Form -->
+        <div class="ride-form">
+            <label for="pickup">Pickup Location</label>
+            <input type="text" id="pickup" placeholder="Enter pickup location">
+
+            <label for="dropoff">Drop-off Location</label>
+            <input type="text" id="dropoff" placeholder="Enter drop-off location">
+
+            <label for="ride-type">Ride Type</label>
+            <select id="ride-type">
+                <option value="economy">Economy Ride</option>
+                <option value="shared">Shared Ride</option>
+                <option value="premium">Premium Ride</option>
+            </select>
+
+            <a href="ride-confirmation.html" class="ride-request">Request ride</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
