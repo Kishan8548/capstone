@@ -3,139 +3,254 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    /* Use Roboto as the primary font */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Base styling and Color Variables */
+:root {
+    --color-primary: #1A202C; /* Dark Background */
+    --color-secondary: #2D3748; /* Slightly Lighter Dark Background for cards/elements */
+    --color-accent-main: #4CAF50; /* Green Accent (Main Action) */
+    --color-accent-sub: #FFC107; /* Amber Accent (Highlight/Titles) */
+    --color-text-light: #F7FAFC; /* Light Text */
+    --color-text-sub: #A0AEC0; /* Subtle Text */
 }
 
 /* Body styling */
 body {
+    background-color: var(--color-primary);
     background-image: url('map.png');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed; 
     min-height: 100vh;
-    overflow-x: hidden;
-    color: #ffffff;
+    color: var(--color-text-light);
 }
 
-/* Main container to hold everything */
+/* Main container */
 .main-container {   
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    justify-content: flex-start;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7); /* Dark overlay for better readability */
+    padding: 0 20px; 
+    background: rgba(0, 0, 0, 0.75); /* Darker overlay for better contrast */
+    min-height: 100vh;
 }
 
-/* Ensure page is scrollable */
-html, body {
-    height: 100%;
-    overflow-y: auto;
-}
-
-/* Navbar styling */
+/* --- Navbar Styling --- */
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: rgba(0, 136, 170, 0.8);
-    border-radius: 10px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
-    width: 50px;
+    width: 40px; 
+    height: 40px;
     margin-right: 10px;
 }
 
 .navbar h1 {
-    font-size: 1.8rem;
-    color: #fff;
+    font-size: 1.6rem;
+    color: var(--color-accent-main);
+    font-weight: 700;
 }
 
-/* Hero section styling */
+.nav-links a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-accent-sub);
+}
+
+
+/* --- Hero Section Styling --- */
 .hero {
-    text-align: center;
-    margin-top: 30px;
+    padding: 50px 0;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, rgba(26,32,44,1) 0%, rgba(26,32,44,0.7) 100%); 
+    border-radius: 10px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-text {
+    max-width: 600px;
+    padding: 20px;
 }
 
 .hero h2 {
-    font-size: 2.2rem;
-    color: #f5f5f5;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    color: var(--color-accent-sub);
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    color: #dcdcdc;
-    margin-bottom: 20px;
+    font-size: 1.25rem;
+    color: var(--color-text-sub);
+    margin-bottom: 30px;
+    line-height: 1.6;
 }
 
+/* Button Styling (with hover effect) */
 .book-now-btn {
-    padding: 15px 30px;
-    background-color: #ffcc00;  /* Bright yellow */
-    color: #000;
+    display: inline-block; 
+    padding: 12px 28px;
+    background-color: var(--color-accent-main); 
+    color: var(--color-primary); 
     border: none;
-    border-radius: 25px;
-    font-size: 1.2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     text-decoration: none;
-    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .book-now-btn:hover {
-    background-color: #e6b800;
+    background-color: #38a169; /* Slightly darker green on hover */
+    transform: translateY(-2px);
 }
 
-/* Ride options section */
+
+/* --- Ride Options Section --- */
 .ride-options {
     text-align: center;
-    margin-bottom: 50px;
+    padding: 40px 0;
 }
 
 .ride-options h3 {
-    font-size: 1.8rem;
-    color: #00ccff;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--color-accent-main);
+    margin-bottom: 40px;
+    font-weight: 700;
 }
 
 .ride-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
+/* Card Styling (with hover effect) */
 .ride-card {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 15px;
+    background-color: var(--color-secondary);
+    padding: 30px 20px;
+    border-radius: 10px;
     text-align: center;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .ride-card:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(74, 175, 80, 0.1); 
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .ride-card img {
-    width: 60px;
-    margin-bottom: 10px;
+    width: 70px; 
+    height: 70px;
+    filter: brightness(0) invert(1); 
+    margin-bottom: 15px;
 }
 
 .ride-card h4 {
-    font-size: 1.3rem;
-    color: #ffcc00;  /* Accent color */
-    margin-bottom: 5px;
+    font-size: 1.4rem;
+    color: var(--color-accent-sub);
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .ride-card p {
     font-size: 1rem;
-    color: #ffffff;
+    color: var(--color-text-sub);
+    line-height: 1.4;
 }
-h3{
-    padding-top: 15px;
+
+/* --- JS Fade-in Animation Classes --- */
+.fade-in { 
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: all 0.6s ease-out; 
+}
+.fade-in.is-visible { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+/* --- Footer Styling --- */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid var(--color-secondary);
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: var(--color-text-sub);
+}
+
+/* --- Responsive Design (Mobile adjustments) --- */
+@media (max-width: 768px) {
+    
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        margin: 0 10px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        padding: 0;
+    }
+    
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .ride-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .ride-card {
+        max-width: 90%;
+        margin: 0 auto;
+    }
 }
