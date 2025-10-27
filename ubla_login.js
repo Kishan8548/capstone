@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (valid) {
+        
       window.location.href = "index.html";
     }
   });
