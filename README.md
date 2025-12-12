@@ -1,7 +1,6 @@
 # 🚗 Ubla – Ride Booking Web App
 
 A simple, modern frontend project simulating a ride-booking platform like Uber, built using **HTML, CSS, and JavaScript**.  
-This repository is open for **Hacktoberfest 2025** contributions! 🌟
 
 > **Perfect for beginners looking to contribute to open source!**
 
@@ -331,13 +330,5 @@ If you like this project, please consider giving it a ⭐ on GitHub! It helps ot
 ## 📄 License
 
 This project is open source and available for learning and contributions.
-
----
-
-## 🙏 Acknowledgments
-
-- Thanks to all contributors who help make this project better!
-- Special thanks to the open-source community for inspiration and support.
-- Built with ❤️ for Hacktoberfest 2025
 
 ---
